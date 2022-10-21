@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Flex</title>
+    <link rel="stylesheet" href="displayFlex.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th>col1</th><th>col1</th><th>col1</th><th>col1</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>data11</td><td>data12</td><td>data13</td><td>data14</td></tr>
+            <tr><td>data21</td><td>data22</td><td>data23</td><td>data24</td></tr>
+            <tr><td>data31</td><td>data32</td><td>data33</td><td>data34</td></tr>
+            <tr><td>data41</td><td>data42</td><td>data43</td><td>data44</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td>&sum;1</td><td>&sum;2</td><td>&sum;3</td><td>&sum;4</td></tr>
+        </tfoot>
+    </table>
+    <div id="row1">
+        <p>1</p>
+        <p>2</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est animi corporis illum reprehenderit iure, quae ad maiores eveniet fugit et expedita id adipisci nemo incidunt quo? Accusamus, nobis velit.</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row2">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row3">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row4">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row5">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row6">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row7">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <div id="row8">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+
+    </div>
+    <script>
+        function random_bg_color() { 
+            var x = Math.floor(Math.random() * 256); 
+            var y = Math.floor(Math.random() * 256); 
+            var z = Math.floor(Math.random() * 256); 
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")"; 
+            return bgColor; 
+        } 
+        let bekezdesek = document.getElementsByTagName('p');
+        for (var i = 0; i < bekezdesek.length; i++) {
+            bekezdesek[i].style.backgroundColor=random_bg_color();
+        }
+        ;
+    </script>
+</body>
+</html>
